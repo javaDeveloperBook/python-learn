@@ -29,3 +29,7 @@ tuple_list = ('Jack', 'python', ['c','go'])
 print(tuple_list)
 tuple_list[2][0] = 'c++'
 print(tuple_list)
+
+
+another_tuple = 1, 2, 3, 4
+print(type(another_tuple))

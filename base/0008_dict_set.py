@@ -1,6 +1,6 @@
 # dict的key必须是不可变对象
 # 键-值（key-value）存储
-score = {'Jack': 100, 'Tom': 88}
+score = {'Jack': 100, 'Tom': 88, 'Mike':99}
 print(score['Jack'])
 
 # 避免key不存在的错误，有两种办法，一是通过in判断key是否存在
@@ -14,6 +14,9 @@ print(score)
 score.pop('Tom')
 print(score)
 
+del score['Jack']
+print(score)
+
 
 # set
 # set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key。
@@ -23,6 +26,7 @@ print(s)
 s.add('Jack')
 print(s)
 # s.remove('Jack')
+s.discard('yyy')
 # print(s)
 
 print('交集:', s & s1)
